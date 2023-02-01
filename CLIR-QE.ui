@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>981</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="tabsClosable">
+          <bool>true</bool>
+         </property>
+         <property name="movable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Main tab</string>
+          </attribute>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1301</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1299</width>
+              <height>669</height>
+             </rect>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>961</width>
+               <height>621</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QCheckBox" name="qeSystem">
+                  <property name="text">
+                   <string>Sistem QE</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QLabel" name="mainTitle">
+                  <property name="font">
+                   <font>
+                    <pointsize>14</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Cross-Language Information Retrieval</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLineEdit" name="inputQuery">
+                  <property name="placeholderText">
+                   <string>Masukkan kueri disini</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="searchBtn">
+                  <property name="text">
+                   <string>Cari</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPlainTextEdit" name="sysResult">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>150</height>
+                   </size>
+                  </property>
+                  <property name="plainText">
+                   <string>Kueri awal: -
+
+Hasil kueri ekspansi teratas;
+1. -
+2. -
+3. -</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QRadioButton" name="allQuery">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Semua kueri</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="ogQuery">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Kueri awal</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="qeRes1">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Kueri ekspansi 1</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="qeRes2">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Kueri ekspansi 2</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="qeRes3">
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Kueri eskpansi 3</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="qeBtn">
+                  <property name="text">
+                   <string>Hasil kueri</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_1">
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Hasil Pencarian dengan Kueri - : x artikel</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget">
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                   </font>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>No Dokumen</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Artikel</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Cos Similarity</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>New tab</string>
+          </attribute>
+          <widget class="QWidget" name="verticalLayoutWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>-1</y>
+             <width>961</width>
+             <height>631</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="title">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Judul</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPlainTextEdit" name="textBrowser">
+              <property name="plainText">
+               <string>Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir. Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir. Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir. Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir. Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir. Murid SMA Yoon Ah Yi membiayai dirinya sendiri dan adik perempuannya dengan bekerja paruh waktu. Dia tidak tahu di mana orang tuanya. Penagih utang mengusir ayahnya dari rumah dan kemudian ibunya juga melarikan diri. Meski dengan keadaan keuangannya yang buruk, Yoon Ah Yi berhasil menduduki peringkat teratas di sekolahnya secara akademis. Yoon Ah Yi ingin menjadi dewasa sesegera mungkin, memiliki pekerjaan yang stabil. Teman sekelasnya Na Il Deung bersaing dengan Yoon Ah Yi untuk mendapatkan nilai tertinggi, tapi mereka mulai memiliki perasaan satu sama lain. Suatu hari, Yoon Ah Yi bertemu pesulap Lee Eul di sebuah taman hiburan yang ditinggalkan. Dia melakukan pertunjukan sulap untuk orang-orang yang percaya pada sihir. Dia adalah orang yang misterius, dia menghibur Yoon Ah Yi yang mengatakan bahwa dia percaya sihir.</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>:/newPrefix/AIR&amp;D.jpg</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>:/newPrefix/logo-unsri.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="resetBtn">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Reset</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="manualBtn">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Manual</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="exitBtn">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Keluar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="clirqe.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+Pustaka-pustaka yang dibutuhkan;
+
+1. PyQt5
+2. deep-translator
+3. nltk
+4. regex (re/regular expression)
+5. numpy
